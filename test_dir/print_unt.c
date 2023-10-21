@@ -1,0 +1,26 @@
+#include "main.h"
+
+/**
+ * print_unt - prints unsi int
+ * @arguments: int to print
+ * @buf: buffer pointer
+ * @ibuf: index for buffer pointer
+ * Return: num of chars
+ */
+
+int print_unt(va_list arguments, char *buf, unsigned int ibuf)
+{
+	unsigned int x, y, i, d;
+
+	x = va_arg(arguments, unsigned int);
+	y = x;
+	d = 1;
+	while (y > 9)
+	{
+		d *= 10;
+		y /= 10;
+	}
+	for (i = 0; d > 0; d /= 10, i++)
+		ibuf = handl_buf(buf, ((x / d) % 10) + '0', ibuf);
+	return (i);
+}
