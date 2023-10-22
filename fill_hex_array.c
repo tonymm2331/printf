@@ -26,5 +26,5 @@ char *fill_hex_array(char *bnr, char *hex, int isupp, int limit)
 		if (op < 10)
 			hex[i / 4] = op + toletter;
 	}
-	return (hex)
+	return (hex);
 }

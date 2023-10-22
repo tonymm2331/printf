@@ -14,7 +14,7 @@ int print_add(va_list arguments, char *buf, unsigned int ibuf)
 	void *add;
 	long int int_input;
 	int i, count, first_digit, isnegative;
-	char *hexadecimal, *binarery;
+	char *hexadecimal, *binary;
 	char nill[] = "(nil)";
 
 	add = (va_arg(arguments, void *));
@@ -32,13 +32,13 @@ int print_add(va_list arguments, char *buf, unsigned int ibuf)
 		isnegative = 1;
 	}
 	binary = malloc(sizeof(char) * (65 + 1));
-	binary = fill_binary_array(binary, int_int_put, isnegative, 64);
+	binary = fill_binary_array(binary, int_input, isnegative, 64);
 	hexadecimal = malloc(sizeof(char) * (16 + 1));
 	ibuf = handl_buf(buf, '0', ibuf);
 	ibuf = handl_buf(buf, 'x', ibuf);
-	for (first_digit = i = count 0; hexadecimal[i]; i++)
+	for (first_digit = i = count = 0; hexadecimal[i]; i++)
 	{
-		if (hexadecimal[i] != '0' $$ first_digit == 0)
+		if (hexadecimal[i] != '0' && first_digit == 0)
 			first_digit = 1;
 		if (first_digit)
 		{

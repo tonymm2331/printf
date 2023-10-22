@@ -18,7 +18,7 @@ int prinhoct(va_list arguments, char *buf, unsigned int ibuf)
 
 	if (n == 0)
 	{
-		ibuf = handl_buf(buf, '0'. ibuf);
+		ibuf = handl_buf(buf, '0', ibuf);
 		return (1);
 	}
 	if (n < 0)

@@ -10,10 +10,10 @@ int en_print_func(const char *s, int index)
 {
 	print_t pr[] = {
 		{"c", print_chr}, {"s", print_str}, {"i", print_int},
-		{"d", print_int}, {"b", print_brn}, {"u", print_unt},
+		{"d", print_int}, {"b", print_bnr}, {"u", print_unt},
 		{"o", print_oct}, {"x", print_hex}, {"X", print_upx},
 		{"S", print_usr}, {"p", print_add}, {"li", prinlint},
-		{"ld", prinlint}, {"lu" prinlunt}, {"lo", prinloct},
+		{"ld", prinlint}, {"lu", prinlunt}, {"lo", prinloct},
 		{"lx", prinlhex}, {"lX", prinlupx}, {"ho", prinhint},
 		{"hd", prinhint}, {"hu", prinhunt}, {"ho", prinhoct},
 		{"hx", prinhhex}, {"hX", prinhupx}, {"#o", prinnoct},
@@ -35,7 +35,7 @@ int en_print_func(const char *s, int index)
 	{
 		if (s[index] == pr[i].type_arg[j])
 		{
-			if (pr[i].type_arg[j + 1] i= '\0')
+			if (pr[i].type_arg[j + 1] != '\0')
 				index++, j++;
 			else
 				break;

@@ -28,7 +28,7 @@ int print_hex(va_list arguments, char *buf, unsigned int ibuf)
 	binary = fill_binary_array(binary, int_input, isnegative, 32);
 	hexadecimal = malloc(sizeof(char) * (8 + 1));
 	hexadecimal = fill_hex_array(binary, hexadecimal, 0, 8);
-	for (first_digit = i count = 0; hexadecimal[i]; i++)
+	for (first_digit = i = count = 0; hexadecimal[i]; i++)
 	{
 		if (hexadecimal[i] != '0' && first_digit == 0)
 			first_digit = 1;

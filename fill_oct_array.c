@@ -20,7 +20,7 @@ char *fill_oct_array(char *bnr, char *oct)
 		else
 			l = 2;
 		for (n = 0, y = 1; y <= l; y *= 2, x--)
-			n = ((bnr[x] - '0') * j) + n;
+			n = ((bnr[x] - '0') * y) + n;
 		x++;
 		oct[noct] = n + '0';
 	}

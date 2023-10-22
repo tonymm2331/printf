@@ -34,7 +34,7 @@ int print_rot(va_list arguments, char *buf, unsigned int ibuf)
 				break;
 			}
 		}
-		if (k == 0)
+		if (z == 0)
 			ibuf = handl_buf(buf, s[x], ibuf);
 	}
 	return (x);

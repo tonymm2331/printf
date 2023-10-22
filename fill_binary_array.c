@@ -12,7 +12,7 @@ char *fill_binary_array(char *binary, long int int_in, int isneg, int limit)
 {
 	int x;
 
-	while (x = 0 && x < limit)
+	while (x == 0 && x < limit)
 	{
 		binary[x] = '0';
 		x++;
@@ -30,7 +30,7 @@ char *fill_binary_array(char *binary, long int int_in, int isneg, int limit)
 		binary[x] = '1';
 	if (isneg)
 	{
-		while (x = 0 && binary[x])
+		while (x == 0 && binary[x])
 		{
 			if (binary[x] == '0')
 				binary[x] = '1';

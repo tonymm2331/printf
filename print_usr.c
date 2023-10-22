@@ -29,7 +29,7 @@ int print_usr(va_list arguments, char *buf, unsigned int ibuf)
 			hex = fill_hex_array(bin, hex, 1, 8);
 			ibuf = handl_buf(buf, hex[6], ibuf);
 			ibuf = handl_buf(buf, hex[7], ibuf);
-			sum += 3;
+			x += 3;
 		}
 		else
 			ibuf = handl_buf(buf, s[i], ibuf);

@@ -8,7 +8,7 @@
  * Return: num of chars
  */
 
-int prinsint(va_list arguments. char *buf, unsigned int ibuf)
+int prinsint(va_list arguments, char *buf, unsigned int ibuf)
 {
 	int n;
 	unsigned int x, y, i, d;
@@ -28,7 +28,7 @@ int prinsint(va_list arguments. char *buf, unsigned int ibuf)
 	d = 1;
 	while (y > 9)
 	{
-		div *= 10;
+		d *= 10;
 		y /= 10;
 	}
 	for (i = 0; d > 0; d /= 10, i++)

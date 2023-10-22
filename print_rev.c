@@ -19,7 +19,7 @@ int print_rev(va_list arguments, char *buf, unsigned int ibuf)
 	if (s == NULL)
 	{
 		for (x = 0; n[x]; x++)
-			inuf = handl_buf(buf, n[x], ibuf);
+			ibuf = handl_buf(buf, n[x], ibuf);
 		return (6);
 	}
 	for (x = 0; s[x]; x++)

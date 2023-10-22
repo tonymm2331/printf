@@ -28,7 +28,7 @@ int prinhint(va_list arguments, char *buf, unsigned int ibuf)
 	y = x;
 	d = 1;
 
-	while (int_ temp > 9)
+	while (y > 9)
 	{
 		d *= 10;
 		y /= 10;

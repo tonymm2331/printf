@@ -29,7 +29,7 @@ int print_upx(va_list arguments, char *buf, unsigned int ibuf)
 	bin = malloc(sizeof(char) * (32 + 1));
 	bin = fill_binary_array(bin, n, neg, 32);
 	hex = malloc(sizeof(char) * (8 + 1));
-	hex = fill_hex+array(bin, hex, 1, 8);
+	hex = fill_hex_array(bin, hex, 1, 8);
 
 	for (f = i = x = 0; hex[i]; i++)
 	{

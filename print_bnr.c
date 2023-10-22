@@ -17,17 +17,17 @@ int print_bnr(va_list arguments, char *buf, unsigned int ibuf)
 
 	if (int_input == 0)
 	{
-		ibuf = handle_buf(buf, '0', ibuf);
+		ibuf = handl_buf(buf, '0', ibuf);
 		return (1);
 
 	}
 	if (int_input < 0)
 	{
-		int_input = (int_int_input * -1) - 1;
+		int_input = (int_input * -1) - 1;
 		isnegative = 1;
 	}
-	binary = malloc(size(char) * (32 + 1));
-	binary = fill_binaty_array(binary, int_input, isnegative, 32);
+	binary = malloc(sizeof(char) * (32 + 1));
+	binary = fill_binary_array(binary, int_input, isnegative, 32);
 	first_one = 0;
 	for (count = i = 0; binary[i]; i++)
 	{
