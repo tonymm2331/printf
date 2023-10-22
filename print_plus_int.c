@@ -26,7 +26,7 @@ int prinpint(va_list arguments, char *buf, unsigned int ibuf)
 	}
 	y = x;
 	d = 1;
-	for (;y > 9;)
+	for (; y > 9;)
 	{
 		d *= 10;
 		y /= 10;

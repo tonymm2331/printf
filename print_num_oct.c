@@ -21,17 +21,17 @@ int prinnoct(va_list arguments, char *buf, unsigned int ibuf)
 	}
 	if (int_input < 0)
 	{
-		int_input = (int_input * -1) -1;
+		int_input = (int_input * -1) - 1;
 		isnegative = 1;
 	}
 	ibuf = handl_buf(buf, '0', ibuf);
 	binary = malloc(sizeof(char) * (32 + 1));
 	binary = fill_binary_array(binary, int_input, isnegative, 32);
 	octal = malloc(sizeof(char) * (11 + 1));
-	octal = fill_octal_array(binary, octal);
+	octal = fill_oct_array(binary, octal);
 	for (first_digit = i = count = 0; octal[i]; i++)
 	{
-		if(octal[i] != '0' && first_digit == 0)
+		if (octal[i] != '0' && first_digit == 0)
 			first_digit = 1;
 		if (first_digit)
 		{

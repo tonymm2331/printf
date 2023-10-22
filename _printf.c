@@ -2,8 +2,7 @@
 
 /**
  * _printf - formatted output conversion and print data.
- * "format: input string
- *
+ * @format: input string
  * Return: number of chars printed.
  */
 int _printf(const char *format, ...)
@@ -22,14 +21,13 @@ int _printf(const char *format, ...)
 	{
 		if  (format[i] == '%')
 		{
-			if (format[i +1] == '\0')
+			if (format[i + 1] == '\0')
 			{
 				print_buf(buffer, ibuf), free(buffer), va_end(arguments);
 				return (-1);
 			}
 			else
-			{
-				function = get_print_func(format, i + 1);
+			{	function = get_print_func(format, i + 1);
 				if (function == NULL)
 				{
 					if (format[i + 1] == ' ' && !format[i + 2])
@@ -50,5 +48,3 @@ int _printf(const char *format, ...)
 	print_buf(buffer, ibuf), free(buffer), va_end(arguments);
 	return (len);
 }
-
-

@@ -4,9 +4,9 @@
  * ev_print_func - return the amount of indentifiers.
  * @s: argument indentifier
  * @index: index of argument indetifier.
- * REturn: amount of indentifiers.
+ * Return: amount of indentifiers.
  */
-int en_print_func(const char *s, int index)
+int ev_print_func(const char *s, int index)
 {
 	print_t pr[] = {
 		{"c", print_chr}, {"s", print_str}, {"i", print_int},

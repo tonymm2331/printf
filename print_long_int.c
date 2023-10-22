@@ -30,11 +30,11 @@ int prinlint(va_list arguments, char *buf, unsigned int ibuf)
 	while (int_temp > 9)
 	{
 		div *= 10;
-		int_temp /=10;
+		int_temp /= 10;
 	}
-	for (i = 0; div > 0; div /=10, i++)
+	for (i = 0; div > 0; div /= 10, i++)
 	{
-		ibuf = handl_buf(buf, ((int_in /div) %10) + '0', ibuf);
+		ibuf = handl_buf(buf, ((int_in / div) % 10) + '0', ibuf);
 	}
 	return (i + isneg);
 }

@@ -20,7 +20,7 @@ char *fill_long_oct_array(char *bnr, char *oct)
 		else
 			limit = 1;
 		for (op = 0, j = 1; j <= limit; j *= 2, i--)
-			op = ((bnr[i] - '0') *j) + op;
+			op = ((bnr[i] - '0') * j) + op;
 		i++;
 		oct[ioct] = op + '0';
 	}

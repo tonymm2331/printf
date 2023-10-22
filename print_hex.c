@@ -5,7 +5,7 @@
  * @arguments: input string
  * @buf: index for buffer pointer
  * @ibuf: index for buffer pointer
- * REturn: number of chars printed
+ * Return: number of chars printed
  */
 int print_hex(va_list arguments, char *buf, unsigned int ibuf)
 {
@@ -21,7 +21,7 @@ int print_hex(va_list arguments, char *buf, unsigned int ibuf)
 	}
 	if (int_input < 0)
 	{
-		int_input = (int_input * -1) -1;
+		int_input = (int_input * -1) - 1;
 		isnegative = 1;
 	}
 	binary = malloc(sizeof(char) * (32 + 1));
@@ -40,5 +40,5 @@ int print_hex(va_list arguments, char *buf, unsigned int ibuf)
 	}
 	free(binary);
 	free(hexadecimal);
-	return(count);
+	return (count);
 }

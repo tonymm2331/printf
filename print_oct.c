@@ -3,7 +3,7 @@
 /**
  * print_oct - prints decimal number in octal
  * @arguments: input number
- * @ibuf: buffer pointer
+ * @buf: buffer pointer
  * @ibuf: index for buffer pointer
  * Return: number of chars printed
  */
@@ -21,7 +21,7 @@ int print_oct(va_list arguments, char *buf, unsigned int ibuf)
 	}
 	if (n < 0)
 	{
-		n = (n * -1) -1;
+		n = (n * -1) - 1;
 		neg = 1;
 	}
 	binary = malloc(sizeof(char) * (32 + 1));

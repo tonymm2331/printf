@@ -2,10 +2,10 @@
 
 /**
  * prinhunt - prints short unsi int
- * @argumentsL int to print
+ * @arguments: int to print
  * @buf: buffer pointer
  * @ibuf: index for buffer pointer
- * ReturnL num of chars
+ * Return: num of chars
  */
 
 int prinhunt(va_list arguments, char *buf, unsigned int ibuf)

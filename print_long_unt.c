@@ -11,8 +11,8 @@ int prinlunt(va_list arguments, char *buf, unsigned int ibuf)
 {
 	unsigned long int int_in, int_temp, i, div;
 
-	int_in = va_arg(arguments, usigned long int);
-	int_temp + int_in;
+	int_in = va_arg(arguments, unsigned long int);
+	int_temp = int_in;
 	div = 1;
 	while (int_temp > 9)
 	{
@@ -25,4 +25,3 @@ int prinlunt(va_list arguments, char *buf, unsigned int ibuf)
 	}
 	return (i);
 }
-		

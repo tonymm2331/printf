@@ -5,7 +5,7 @@
  * @arguments: input str
  * @buf: buffer pointer
  * @ibuf: index for buffer pointer
- * ReturnL num of chars
+ * Return: num of chars
  */
 
 int prinhhex(va_list arguments, char *buf, unsigned int ibuf)
